@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeCrafters Gaming</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Styles for body, header, navigation, and container */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Press Start 2P', cursive;
+      background-color: #111;
+      color: #ffffff;
+      text-align: center;
+    }
+    header {
+      background-color: #000;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .logo-text {
+      font-size: 2rem;
+      color: #ffffff;
+      margin-bottom: 5px;
+      display: block;
+    }
+        nav {
+      display: flex;
+      justify-content: center;
+      background-color: #222;
+      padding: 10px 0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+    nav ul li {
+      display: inline-block;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      border: 2px solid transparent;
+      position: relative;
+    }
+    nav ul li a:hover {
+      background-color: #333;
+      border-color: #fff;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+      background-color: #fff;
+      color: #000;
+    }
+    .container {
+      text-align: center;
+      margin-top: 20vh;
+    }
+    .text-graphics {
+      font-size: 2rem;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+    /* Styles for the button */
+    .button {
+      background-color: #f00;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family: sans-serif;
+    }
+    .button:hover {
+      background-color: #d00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo-text">CodeCrafters</h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="animate__animated animate__bounceIn">Home</a></li>
+        <li><a href="#" class="animate__animated animate__bounceIn">Games</a></li>
+        <li><a href="#" class="animate__animated animate__bounceIn">About</a></li>
+        <li><a href="#" class="animate__animated animate__bounceIn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="text-graphics">
+      <h2>Welcome to CodeCrafters</h2>
+      <p>Your ultimate destination for gaming adventures!</p>
+    </div>
+    <!-- Join Us button with onclick event to open YouTube account -->
+    <button class="button animate__animated animate__bounceIn" onclick="joinUs()">Join Us</button>
+  </div>
+
+  <script>
+    // Function to redirect to YouTube account page
+    function joinUs() {
+      window.location.href = "https://www.youtube.com/your_account"; // Replace with your YouTube account URL
+    }
+  </script>
+</body>
+</html>
